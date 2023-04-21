@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outputDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es6",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    // esmoduleInterop позволяет работать с пакетами, которые используют
+    // commonjs как с обычными пакетами с помощью import и r() module.exports)
+    // например, без флага
+    // import Moment from'moment'; - будет undefined с флагом будет [object Object]
+    "esModuleInterop": true,
+    // Если какая то бибоиотека не имеет default import,
+    // лоадеры вроде ts-loader или babel-loader автоматически создаются их
+    // вместо такого импорта
+    // import * as React from 'react';
+    // можно писать такой
+    // import React from'react';
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "."
+
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+    }
+  }
+}
