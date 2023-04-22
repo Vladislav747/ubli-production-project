@@ -29,10 +29,17 @@
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4",
-    "@types/webpack-dev-server": "^4.7.2"
+    "@types/webpack-dev-server": "^4.7.2",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-router-dom": "^5.3.3",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "css-loader": "^6.6.0"
   },
   "dependencies": {
-    "@types/webpack-dev-server": "^4.7.2",
-    "webpack-dev-server": "^4.13.3"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
