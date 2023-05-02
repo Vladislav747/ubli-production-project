@@ -11,6 +11,10 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     // esmoduleInterop позволяет работать с пакетами, которые используют
     // commonjs как с обычными пакетами с помощью import и r() module.exports)
     // например, без флага
@@ -23,7 +27,6 @@
     // можно писать такой
     // import React from'react';
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "."
 
   },
   "ts-node": {
