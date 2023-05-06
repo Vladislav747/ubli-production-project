@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/index.scss';
 import {useTheme} from "./providers/ThemeProvider";
 import {classNames} from "shared/lib/classNames/classNames";
-import {Navbar} from "./widgets/Navbar";
+import {Navbar} from "widgets/Navbar";
 import {AppRouter} from "app/providers/router";
 
 const App = () => {
