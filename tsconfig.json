@@ -15,7 +15,7 @@
     "paths": {
       "*": ["./src/*"]
     },
-    // esmoduleInterop позволяет работать с пакетами, которые используют
+    // esModuleInterop позволяет работать с пакетами, которые используют
     // commonjs как с обычными пакетами с помощью import и r() module.exports)
     // например, без флага
     // import Moment from'moment'; - будет undefined с флагом будет [object Object]
