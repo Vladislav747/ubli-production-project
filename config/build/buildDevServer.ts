@@ -1,4 +1,4 @@
-import {BuildOptions} from "./types/config";
+import { BuildOptions } from './types/config';
 
 export function buildDevServer(options: BuildOptions): any {
     return {
@@ -6,5 +6,5 @@ export function buildDevServer(options: BuildOptions): any {
         open: true,
         historyApiFallback: true,
         hot: true,
-    }
+    };
 }
