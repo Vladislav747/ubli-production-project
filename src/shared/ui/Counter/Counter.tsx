@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classes from 'src/shared/ui/Counter/Counter.module.scss';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 const Counter = () => {
     const { t } = useTranslation();
@@ -14,7 +14,9 @@ const Counter = () => {
     return (
         <div className={classes.btn}>
             <h1>{count}</h1>
-            <button type="button" onClick={increment}>{t('Увеличить')}</button>
+            <button type="button" onClick={increment}>
+                {t('Увеличить')}
+            </button>
         </div>
     );
 };
