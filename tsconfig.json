@@ -9,29 +9,34 @@
     // В какую спецификацию компилируем: для поддержки большинства браузеров
     "target": "es5",
     "jsx": "react-jsx",
+    // Компилятор будет обрабатывать не только TS файлы, но и JS файлы
     "allowJs": true,
     "moduleResolution": "node",
+    // Для абсолютного импорта
     "baseUrl": ".",
     "paths": {
       "*": ["./src/*"]
     },
     // esModuleInterop позволяет работать с пакетами, которые используют
-    // commonjs как с обычными пакетами с помощью import и r() module.exports)
-    // например, без флага
-    // import Moment from'moment'; - будет undefined с флагом будет [object Object]
+    // common js как с обычными пакета с помощью import (require() module.export) = common js
+    // import Moment from 'moment';
+    // без флага esModuleInterop результат undefined
+    // console.log(Moment);
+    // c флагом результат [object Object]
+    // console.log(Moment);
     "esModuleInterop": true,
-    // Если какая то бибоиотека не имеет default import,
-    // лоадеры вроде ts-loader или babel-loader автоматически создаются их
+    // Если какая-либо библиотека не имеет default import,
+    // лоадеры вроде ts-loader или babel-loader автоматически создают их
     // вместо такого импорта
     // import * as React from 'react';
     // можно писать такой
-    // import React from'react';
-    "allowSyntheticDefaultImports": true,
-
+    // import React from 'react';
+    "allowSyntheticDefaultImports": true
   },
   "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS",
+      "module": "CommonJS"
     }
-  }
+  },
+  "include": ["./config/jest/setupTests.ts", "./src/**/*.ts", "./src/**/*.tsx"]
 }
