@@ -1,14 +1,12 @@
-import { classNames } from "shared/lib/classNames/classNames";
-import cls from "./Navbar.module.scss";
+import { classNames } from 'shared/lib/classNames/classNames';
+import cls from './Navbar.module.scss';
 
 interface NavbarProps {
-  className?: string;
+    className?: string;
 }
 
-export const Navbar = ({ className }: NavbarProps) => {
-  return (
+export const Navbar = ({ className }: NavbarProps) => (
     <div className={classNames(cls.Navbar, {}, [className])}>
-      <div className={cls.links}>/</div>
+        <div className={cls.links}>/</div>
     </div>
-  );
-};
+);
