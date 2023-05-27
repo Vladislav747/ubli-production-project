@@ -20,7 +20,9 @@ interface ModalProps {
 const ANIMATION_DELAY = 300;
 
 export const Modal = (props: ModalProps) => {
-    const { className, children, isOpen, onClose } = props;
+    const {
+        className, children, isOpen, onClose,
+    } = props;
 
     const [isClosing, setIsClosing] = useState(false);
     const timerRef = useRef<ReturnType<typeof setTimeout>>();
@@ -43,7 +45,7 @@ export const Modal = (props: ModalProps) => {
                 closeHandler();
             }
         },
-        [closeHandler]
+        [closeHandler],
     );
 
     const onContentClick = (e: React.MouseEvent) => {
