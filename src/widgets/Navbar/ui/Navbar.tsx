@@ -1,12 +1,10 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from 'react-redux';
 import React, { useCallback, useState } from 'react';
-
-import { LoginModal } from 'features/AuthByUsername';
-import { getUserAuthData, userActions } from 'entities/User';
-
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
+import { LoginModal } from 'features/AuthByUsername';
+import { useDispatch, useSelector } from 'react-redux';
+import { getUserAuthData, userActions } from 'entities/User';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -16,7 +14,6 @@ interface NavbarProps {
 export const Navbar = ({ className }: NavbarProps) => {
     const { t } = useTranslation();
     const [isAuthModal, setIsAuthModal] = useState(false);
-
     const authData = useSelector(getUserAuthData);
     const dispatch = useDispatch();
 
@@ -45,6 +42,7 @@ export const Navbar = ({ className }: NavbarProps) => {
             </div>
         );
     }
+
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
             <Button
