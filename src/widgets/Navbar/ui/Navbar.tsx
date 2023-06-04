@@ -4,7 +4,7 @@ import React, { useCallback, useState } from 'react';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { LoginModal } from 'features/AuthByUsername';
 import { useDispatch, useSelector } from 'react-redux';
-import { getUserAuthData, userActions } from 'entities/User';
+import { getUserAuthData, userActions } from '../../../entities/User';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
