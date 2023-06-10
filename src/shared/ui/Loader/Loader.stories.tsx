@@ -8,11 +8,11 @@ export default {
     title: 'shared/Loader',
     component: Loader,
     argTypes: {
-        backgroundColor: { control: 'color' },
+        backgroundColor: { control: 'color' }
     },
     args: {
-        to: '/',
-    },
+        to: '/'
+    }
 } as ComponentMeta<typeof Loader>;
 
 const Template: ComponentStory<typeof Loader> = (args) => <Loader {...args} />;

@@ -58,11 +58,11 @@ describe('loginByUsername.test', () => {
         const thunk = new TestAsyncThunk(loginByUsername);
         const result = await thunk.callThunk({
             username: '123',
-            password: '123',
+            password: '123'
         });
 
         expect(thunk.dispatch).toHaveBeenCalledWith(
-            userActions.setAuthData(userValue),
+            userActions.setAuthData(userValue)
         );
         expect(thunk.dispatch).toHaveBeenCalledTimes(3);
         expect(mockedAxios.post).toHaveBeenCalled();
@@ -75,7 +75,7 @@ describe('loginByUsername.test', () => {
         const thunk = new TestAsyncThunk(loginByUsername);
         const result = await thunk.callThunk({
             username: '123',
-            password: '123',
+            password: '123'
         });
 
         expect(thunk.dispatch).toHaveBeenCalledTimes(2);

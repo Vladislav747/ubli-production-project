@@ -1,5 +1,5 @@
 import {
-    AnyAction, combineReducers, Reducer, ReducersMapObject,
+    AnyAction, combineReducers, Reducer, ReducersMapObject
 } from '@reduxjs/toolkit';
 import { ReducerManager, StateSchema, StateSchemaKey } from './StateSchema';
 
@@ -37,6 +37,6 @@ export function createReducerManager(initialReducers: ReducersMapObject<StateSch
             delete reducers[key];
             keysToRemove.push(key);
             combinedReducer = combineReducers(reducers);
-        },
+        }
     };
 }

@@ -1,5 +1,3 @@
-import { Sidebar } from './ui/Sidebar';
+import { Sidebar } from 'widgets/Sidebar/ui/Sidebar/Sidebar';
 
-export {
-    Sidebar,
-};
+export { Sidebar };

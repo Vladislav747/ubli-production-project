@@ -5,13 +5,13 @@ const initialState: ProfileSchema = {
     readonly: true,
     isLoading: false,
     error: undefined,
-    data: undefined,
+    data: undefined
 };
 
 export const profileSlice = createSlice({
     name: 'profile',
     initialState,
-    reducers: {},
+    reducers: {}
 });
 
 // Action creators are generated for each case reducer function

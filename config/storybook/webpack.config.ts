@@ -8,7 +8,7 @@ export default ({ config }: {config: webpack.Configuration}) => {
         build: '',
         html: '',
         entry: '',
-        src: path.resolve(__dirname, '..', '..', 'src'),
+        src: path.resolve(__dirname, '..', '..', 'src')
     };
     config.resolve.modules.push(paths.src);
     config.resolve.extensions.push('.ts', '.tsx');
@@ -24,12 +24,12 @@ export default ({ config }: {config: webpack.Configuration}) => {
 
     config.module.rules.push({
         test: /\.svg$/,
-        use: ['@svgr/webpack'],
+        use: ['@svgr/webpack']
     });
     config.module.rules.push(buildCssLoader(true));
 
     config.plugins.push(new DefinePlugin({
-        __IS_DEV__: true,
+        __IS_DEV__: true
     }));
 
     return config;

@@ -7,12 +7,12 @@ import { createReducerManager } from './reducerManager';
 
 export function createReduxStore(
     initialState?: StateSchema,
-    asyncReducers?: ReducersMapObject<StateSchema>,
+    asyncReducers?: ReducersMapObject<StateSchema>
 ) {
     const rootReducers: ReducersMapObject<StateSchema> = {
         ...asyncReducers,
         counter: counterReducer,
-        user: userReducer,
+        user: userReducer
     };
 
     const reducerManager = createReducerManager(rootReducers);
@@ -20,7 +20,7 @@ export function createReduxStore(
     const store = configureStore<StateSchema>({
         reducer: reducerManager.reduce,
         devTools: __IS_DEV__,
-        preloadedState: initialState,
+        preloadedState: initialState
     });
 
     // @ts-ignore
