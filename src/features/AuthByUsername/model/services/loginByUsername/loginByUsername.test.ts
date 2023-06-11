@@ -36,7 +36,6 @@ describe('loginByUsername.test', () => {
     //     expect(mockedAxios.post).toHaveBeenCalled();
     //     expect(result.meta.requestStatus).toBe('rejected');
     //     expect(result.payload).toBe('error');
-    // });oEqual(userValue);
     // });
     //
 

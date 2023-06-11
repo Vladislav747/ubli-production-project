@@ -6,6 +6,9 @@ describe('getLoginError.test', () => {
     test('should return error', () => {
         const state: DeepPartial<StateSchema> = {
             loginForm: {
+                username: '',
+                password: '',
+                isLoading: false,
                 error: 'error'
             }
         };
