@@ -1,14 +1,16 @@
-import { CounterSchema } from 'entities/Counter';
-import { UserSchema } from 'entities/User';
-import { LoginSchema } from 'features/AuthByUsername';
+import { AxiosInstance } from 'axios';
+import { Path } from 'history';
+import { NavigateOptions } from 'react-router';
 import {
     AnyAction, EnhancedStore, Reducer, ReducersMapObject
 } from '@reduxjs/toolkit';
 import { CombinedState } from 'redux';
+
+import { CounterSchema } from 'entities/Counter';
+import { UserSchema } from 'entities/User';
 import { ProfileSchema } from 'entities/Profile';
-import { AxiosInstance } from 'axios';
-import { Path } from 'history';
-import { NavigateOptions } from 'react-router';
+import { ArticleDetailsSchema } from 'entities/Article';
+import { LoginSchema } from 'features/AuthByUsername';
 
 export interface StateSchema {
     counter: CounterSchema;
@@ -17,6 +19,7 @@ export interface StateSchema {
     // Асинхронные редюсеры
     loginForm?: LoginSchema;
     profile?: ProfileSchema;
+    articleDetails?: ArticleDetailsSchema;
 }
 
 export type StateSchemaKey = keyof StateSchema;
