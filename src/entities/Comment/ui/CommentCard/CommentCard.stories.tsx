@@ -19,6 +19,8 @@ export const Normal = Template.bind({});
 Normal.args = {
     comment: {
         user: {
+            id: '1',
+            username: 'asd',
             avatar: 'https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg'
         },
         isLoading: false
