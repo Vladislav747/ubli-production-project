@@ -5,16 +5,15 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { classNames } from 'shared/lib/classNames/classNames';
 
-import { ArticleDetails } from 'entities/Article';
-
 import { Text } from 'shared/ui/Text/Text';
-import { CommentList } from 'entities/Comment';
 import {
     DynamicModuleLoader,
     ReducersList
 } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect';
 import { fetchCommentsByArticleId } from 'pages/ArticleDetailsPage/model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
+import { CommentList } from '../../../../entities/Comment';
+import { ArticleDetails } from '../../../../entities/Article';
 import {
     articleDetailsCommentsReducer,
     getArticleComments
