@@ -11,7 +11,16 @@ export default {
     }
 } as ComponentMeta<typeof CommentCard>;
 
-const Template: ComponentStory<typeof CommentCard> = (args) => <CommentCard {...args} />;
+const Template: ComponentStory<typeof CommentCard> = (args) => (
+    <CommentCard {...args} />
+);
 
 export const Normal = Template.bind({});
-Normal.args = {};
+Normal.args = {
+    comment: {
+        user: {
+            avatar: 'https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg'
+        },
+        isLoading: false
+    }
+};
