@@ -2,7 +2,7 @@ import { memo } from 'react';
 
 import { classNames } from 'shared/lib/classNames/classNames';
 
-import { ArticleList, ArticleView } from 'entities/Article';
+import { ArticleList, ArticleView } from '../../../../entities/Article';
 import cls from './ArticlesPage.module.scss';
 
 interface ArticlesPageProps {
