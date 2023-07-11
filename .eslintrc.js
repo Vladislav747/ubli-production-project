@@ -55,10 +55,10 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid', 'to'],
+                ignoreAttribute: ['data-testid', 'to', 'target'],
             },
         ],
-        'max-len': ['error', { ignoreComments: true, code: 135 }],
+        'max-len': ['error', { ignoreComments: true, code: 145 }],
         'jsx-a11y/no-static-element-interactions': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
         'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
