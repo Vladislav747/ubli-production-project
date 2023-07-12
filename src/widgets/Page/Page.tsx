@@ -10,7 +10,7 @@ import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect';
 import { useSelector } from 'react-redux';
 import { StateSchema } from 'app/providers/StoreProvider';
 import { useThrottle } from 'shared/lib/hooks/useThrottle';
-import cls from './Page.module.scss';
+import cls from 'widgets/Page/Page.module.scss';
 
 interface PageProps {
     className?: string;
