@@ -18,7 +18,7 @@ export const loginByUsername = createAsyncThunk<
 
     try {
         const response = await extra.api.post<User>(
-            'http://localhost:8000/login',
+            '/login',
             authData
         );
 
