@@ -4,7 +4,7 @@ import { buildCssLoader } from '../build/loaders/buildCssLoader';
 import { BuildPaths } from '../build/types/config';
 
 export default ({ config }: {config: webpack.Configuration}) => {
-    const paths: BuildPaths = {
+    const paths: Omit<BuildPaths, 'locales' | 'buildLocales'> = {
         build: '',
         html: '',
         entry: '',
