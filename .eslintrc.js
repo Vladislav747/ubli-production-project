@@ -17,7 +17,13 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks', "ubli-tv-plugin"],
+    plugins: [
+        'react',
+        '@typescript-eslint',
+        'i18next',
+        'react-hooks',
+        'ubli-tv-plugin',
+    ],
     rules: {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
@@ -55,7 +61,15 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid', 'to', 'target'],
+                ignoreAttribute: [
+                    'data-testid',
+                    'to',
+                    'target',
+                    'justify',
+                    'align',
+                    'direction',
+                    'gap',
+                ],
             },
         ],
         'max-len': ['error', { ignoreComments: true, code: 155 }],
@@ -66,7 +80,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
-        'ubli-tv-plugin/path-checker': 2
+        'ubli-tv-plugin/path-checker': 2,
     },
     globals: {
         __IS_DEV__: true,
