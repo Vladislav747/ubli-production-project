@@ -32,7 +32,7 @@ const reducers: ReducersList = {
 const ArticlesPage = (props: ArticlesPageProps) => {
     const { className } = props;
     const dispatch = useAppDispatch();
-    // const error = useSelector(getArticlesPageError);
+
     const [searchParams] = useSearchParams();
 
     const onLoadNextPart = useCallback(() => {

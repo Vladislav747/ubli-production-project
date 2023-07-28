@@ -1,8 +1,11 @@
 import { List, ListRowProps, WindowScroller } from 'react-virtualized';
+import { HTMLAttributeAnchorTarget, memo } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { classNames } from 'shared/lib/classNames/classNames';
-import { HTMLAttributeAnchorTarget, memo } from 'react';
+
 import { PAGE_ID } from 'widgets/Page/Page';
+import { Text, TextSize } from 'shared/ui/Text/Text';
 import { ArticleListItemSkeleton } from '../../../../entities/Article/ui/ArticleListItem/ArticleListItemSkeleton';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import cls from './ArticleList.module.scss';
@@ -34,6 +37,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
         isLoading,
         target
     } = props;
+    const { t } = useTranslation();
 
     const isBig = view === ArticleView.BIG;
 
@@ -65,6 +69,14 @@ export const ArticleList = memo((props: ArticleListProps) => {
             </div>
         );
     };
+
+    if (!isLoading && !articles.length) {
+        return (
+            <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
+                <Text size={TextSize.L} title={t('Статьи не найдены')} />
+            </div>
+        );
+    }
 
     return (
         <WindowScroller
