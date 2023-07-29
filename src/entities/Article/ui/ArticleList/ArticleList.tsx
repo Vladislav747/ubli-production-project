@@ -93,6 +93,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
                 scrollTop
             }) => (
                 <div
+                    // @ts-ignore
                     ref={registerChild}
                     className={classNames(cls.ArticleList, {}, [
                         className,
