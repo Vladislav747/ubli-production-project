@@ -14,7 +14,7 @@ import {
     isUserAdmin,
     isUserManager,
     userActions
-} from 'entities/User';
+} from '../../../entities/User';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {

@@ -7,7 +7,7 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch';
 import { HStack } from 'shared/ui/Stack';
 import { Text } from 'shared/ui/Text/Text';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
-import { getUserAuthData } from 'entities/User';
+import { getUserAuthData } from '../../../../entities/User';
 import { profileActions } from '../../model/slices/profileSlice';
 import { getProfileReadonly } from '../../model/selectors/getProfileReadonly/getProfileReadonly';
 import { getProfileData } from '../../model/selectors/getProfileData/getProfileData';
@@ -26,9 +26,6 @@ export const EditableProfileCardHeader = memo((props: EditableProfileCardHeaderP
     const authData = useSelector(getUserAuthData);
     const profileData = useSelector(getProfileData);
     const canEdit = authData?.id === profileData?.id;
-    // console.log(authData?.id, "authData?.id")
-    // console.log(profileData?.id, "profileData?.id")
-    // console.log(profileData, "profileData")
     const readonly = useSelector(getProfileReadonly);
     const dispatch = useAppDispatch();
 
