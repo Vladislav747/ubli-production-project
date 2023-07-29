@@ -2,6 +2,12 @@
     cursor: pointer;
     color: var(--primary-color);
     padding: 6px 15px;
+
+    &:hover {
+        opacity: 0.8;
+        fill-opacity: 80%;
+        stroke-opacity: 80%;
+    }
 }
 
 .clear {
@@ -22,6 +28,12 @@
 .outline {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
+    background: none;
+}
+
+.outline_red {
+    border: 1px solid var(--red-light);
+    color: var(--red-light);
     background: none;
 }
 
