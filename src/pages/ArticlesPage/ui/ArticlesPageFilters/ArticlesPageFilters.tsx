@@ -14,10 +14,10 @@ import {
     ArticleSortSelector,
     ArticleTypeTabs,
     ArticleView,
-    ArticleViewSelector
+    ArticleViewSelector,
+    ArticleType
 } from '../../../../entities/Article';
 
-import { ArticleType } from '../../../../entities/Article/model/types/article';
 import { fetchArticlesList } from '../../model/services/fetchArticlesList/fetchArticlesList';
 import cls from './ArticlesPageFilters.module.scss';
 import {
