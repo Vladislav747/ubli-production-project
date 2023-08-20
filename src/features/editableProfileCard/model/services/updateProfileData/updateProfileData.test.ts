@@ -1,9 +1,9 @@
-import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsynkThunk';
-import { Country } from 'entities/Country';
-import { Currency } from 'entities/Currency';
+import { TestAsyncThunk } from '@/shared/lib/tests/TestAsyncThunk/TestAsynkThunk';
+import { Country } from '@/entities/Country';
+import { Currency } from '@/entities/Currency';
 
-import { updateProfileData } from 'features/editableProfileCard/model/services/updateProfileData/updateProfileData';
-import { ValidateProfileError } from 'features/editableProfileCard/model/consts/consts';
+import { updateProfileData } from '@/features/editableProfileCard/model/services/updateProfileData/updateProfileData';
+import { ValidateProfileError } from '@/features/editableProfileCard/model/consts/consts';
 
 const data = {
     username: 'admin',

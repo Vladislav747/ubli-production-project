@@ -3,9 +3,9 @@ import { NavigateOptions } from 'react-router';
 import { Path } from 'history';
 import { CombinedState, Reducer } from 'redux';
 
-import { $api } from 'shared/api/api';
-import { uiReducer } from 'features/UI';
-import { rtkApi } from 'shared/api/rtkApi';
+import { $api } from '@/shared/api/api';
+import { uiReducer } from '@/features/UI';
+import { rtkApi } from '@/shared/api/rtkApi';
 import { counterReducer } from '../../../../../src/entities/Counter';
 import { userReducer } from '../../../../../src/entities/User';
 

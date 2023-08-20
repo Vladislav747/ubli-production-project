@@ -1,4 +1,4 @@
-import { Country, Currency } from 'shared/const/common';
+import { Country, Currency } from '@/shared/const/common';
 
 export interface Profile {
     id?: string;

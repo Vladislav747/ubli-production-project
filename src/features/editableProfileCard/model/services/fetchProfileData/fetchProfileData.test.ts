@@ -1,7 +1,7 @@
-import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsynkThunk';
-import { Country } from 'entities/Country';
-import { Currency } from 'entities/Currency';
-import { fetchProfileData } from 'features/editableProfileCard/model/services/fetchProfileData/fetchProfileData';
+import { TestAsyncThunk } from '@/shared/lib/tests/TestAsyncThunk/TestAsynkThunk';
+import { Country } from '@/entities/Country';
+import { Currency } from '@/entities/Currency';
+import { fetchProfileData } from '@/features/editableProfileCard/model/services/fetchProfileData/fetchProfileData';
 
 const data = {
     username: 'admin',

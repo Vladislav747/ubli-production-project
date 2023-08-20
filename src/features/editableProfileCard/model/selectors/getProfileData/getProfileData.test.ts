@@ -1,7 +1,7 @@
-import { StateSchema } from 'app/providers/StoreProvider';
-import { Country } from 'entities/Country';
-import { Currency } from 'entities/Currency';
-import { getProfileData } from 'features/editableProfileCard/model/selectors/getProfileData/getProfileData';
+import { StateSchema } from '@/app/providers/StoreProvider';
+import { Country } from '@/entities/Country';
+import { Currency } from '@/entities/Currency';
+import { getProfileData } from '@/features/editableProfileCard/model/selectors/getProfileData/getProfileData';
 
 describe('getProfileData.test', () => {
     test('should return error', () => {
