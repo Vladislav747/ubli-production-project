@@ -34,7 +34,7 @@ export const Button: FC<ButtonProps> = (props) => {
         theme = ButtonTheme.OUTLINE,
         square,
         disabled,
-        fullWidth, https: // youtube.com/shorts/njvgnsqxikY?feature=share
+        fullWidth,
         size = ButtonSize.M,
         ...otherProps
     } = props;
