@@ -10,25 +10,38 @@ project.addSourceFilesAtPaths('src/**/*.ts');
 project.addSourceFilesAtPaths('src/**/*.tsx');
 
 const files = project.getSourceFiles();
+// По какому пути получить все папки(файлы)
 const uiPath = path.resolve(__dirname, '..', '..', 'src', 'shared', 'ui');
+
 const sharedUiDirectory = project.getDirectory(uiPath);
 const componentsDirs = sharedUiDirectory?.getDirectories();
 
 function isAbsolute(value: string) {
-    const layers = ['app', 'shared', 'entities', 'features', 'widgets', 'pages'];
+    const layers = [
+        'app',
+        'shared',
+        'entities',
+        'features',
+        'widgets',
+        'pages'
+    ];
     return layers.some((layer) => value.startsWith(layer));
 }
 
 componentsDirs?.forEach((directory) => {
     const indexFilePath = `${directory.getPath()}/index.ts`;
     const indexFile = directory.getSourceFile(indexFilePath);
-
     /**
      * Если еще нет index файла
      */
     if (!indexFile) {
         const sourceCode = `export * from './${directory.getBaseName()}'`;
-        const file = directory.createSourceFile(indexFilePath, sourceCode, { overwrite: true });
+        /**
+         * Создать файл index.ts в папке UI компонента
+         */
+        const file = directory.createSourceFile(indexFilePath, sourceCode, {
+            overwrite: true
+        });
 
         file.save();
     }
