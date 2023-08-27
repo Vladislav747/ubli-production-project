@@ -84,6 +84,13 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'ubli-tv-plugin/path-checker': ['error', { alias: '@' }],
+        'ubli-tv-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'ubli-tv-plugin/public-api-imports': [
             'error',
             {
