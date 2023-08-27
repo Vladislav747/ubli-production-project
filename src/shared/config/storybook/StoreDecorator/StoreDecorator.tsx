@@ -2,11 +2,12 @@ import { Story } from '@storybook/react';
 import { StateSchema, StoreProvider } from '@/app/providers/StoreProvider';
 import { loginReducer } from '@/features/AuthByUsername';
 import { ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+// eslint-disable-next-line ubli-tv-plugin/public-api-imports
 import { addCommentFormReducer } from '@/features/addCommentForm/model/slices/addCommentFormSlice';
-
+// eslint-disable-next-line ubli-tv-plugin/public-api-imports
 import { profileReducer } from '@/features/editableProfileCard/model/slices/profileSlice';
-
-import { articleDetailsReducer } from '../../../../entities/Article/model/slice/articleDetailsSlice';
+// eslint-disable-next-line ubli-tv-plugin/public-api-imports
+import { articleDetailsReducer } from '@/entities/Article/model/slice/articleDetailsSlice';
 
 const defaultAsyncReducers: ReducersList = {
     loginForm: loginReducer,

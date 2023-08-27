@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Page } from './Page';
+import { Page } from 'widgets/Page';
 
 export default {
     title: 'shared/Page',

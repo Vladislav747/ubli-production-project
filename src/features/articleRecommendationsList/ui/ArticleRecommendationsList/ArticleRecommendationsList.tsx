@@ -3,8 +3,10 @@ import { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Text, TextSize } from '@/shared/ui/Text/Text';
 import { VStack } from '@/shared/ui/Stack';
-import { useArticleRecommendationsList } from '@/features/articleRecommendationsList/api/articleRecommendationsApi';
-import { ArticleList } from '../../../../entities/Article';
+import {
+    useArticleRecommendationsList
+} from '../../api/articleRecommendationsApi';
+import { ArticleList } from '@/entities/Article';
 
 interface ArticleRecommendationsListProps {
     className?: string;
