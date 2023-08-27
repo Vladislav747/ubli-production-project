@@ -84,7 +84,17 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'ubli-tv-plugin/path-checker': ['error', { alias: '@' }],
-        'ubli-tv-plugin/public-api-imports': ['error', { alias: '@' }]
+        'ubli-tv-plugin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: [
+                    '**/*.test.*',
+                    '**/*.story.*',
+                    '**/StoreDecorator.tsx',
+                ],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,
