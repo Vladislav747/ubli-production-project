@@ -1,7 +1,7 @@
 import { memo, useCallback } from 'react';
 
 import { useSearchParams } from 'react-router-dom';
-import { Page } from 'widgets/Page';
+import { Page } from '@/widgets/Page';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
 import {

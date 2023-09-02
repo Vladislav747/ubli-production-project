@@ -4,7 +4,7 @@ import ThemeProvider from '@/app/providers/ThemeProvider/ui/ThemeProvider';
 
 import App from '@/app/App';
 
-import './shared/config/i18n/i18n';
+import '@/shared/config/i18n/i18n';
 import { ErrorBoundary } from '@/app/providers/ErrorBoundary';
 import { StoreProvider } from '@/app/providers/StoreProvider';
 
@@ -27,4 +27,4 @@ root.render(
         </StoreProvider>
     </BrowserRouter>
 );
-export { Theme } from 'shared/const/theme';
+export { Theme } from '@/shared/const/theme';
