@@ -37,7 +37,7 @@ componentsDirs?.forEach((directory) => {
     if (!indexFile) {
         const sourceCode = `export * from './${directory.getBaseName()}'`;
         /**
-         * Создать файл index.ts в папке UI компонента
+         * Создать файл sort.ts в папке UI компонента
          */
         const file = directory.createSourceFile(indexFilePath, sourceCode, {
             overwrite: true
