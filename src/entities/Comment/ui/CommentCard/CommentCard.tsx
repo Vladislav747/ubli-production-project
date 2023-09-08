@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-import { getRouteProfile } from 'shared/const/router';
+import { getRouteProfile } from '@/shared/const/router';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Text } from '@/shared/ui/Text';
