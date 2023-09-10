@@ -1,6 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
+// @ts-ignore
 import withMock from 'storybook-addon-mock';
 import ArticleRating from './ArticleRating';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
@@ -23,11 +24,13 @@ Normal.args = {
     articleId: '1'
 };
 
-Normal.decorators = [StoreDecorator({
-    user: {
-        authData: { id: '1' }
-    }
-})];
+Normal.decorators = [
+    StoreDecorator({
+        user: {
+            authData: { id: '1' }
+        }
+    })
+];
 
 Normal.parameters = {
     mockData: [
