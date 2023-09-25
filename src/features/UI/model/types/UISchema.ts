@@ -3,6 +3,6 @@
  */
 export type ScrollSchema = Record<string, number>;
 
-export interface UISchema{
+export interface UISchema {
     scroll: ScrollSchema;
 }

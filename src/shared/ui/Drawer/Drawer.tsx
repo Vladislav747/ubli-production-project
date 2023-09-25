@@ -1,9 +1,10 @@
-import React, {
-    memo, ReactNode, useCallback, useEffect
-} from 'react';
+import React, { memo, ReactNode, useCallback, useEffect } from 'react';
 
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { AnimationProvider, useAnimationLibs } from '@/shared/lib/components/AnimationProvider';
+import {
+    AnimationProvider,
+    useAnimationLibs
+} from '@/shared/lib/components/AnimationProvider';
 import { Overlay } from '../Overlay/Overlay';
 import cls from './Drawer.module.scss';
 import { Portal } from '../Portal/Portal';
@@ -23,9 +24,7 @@ export const DrawerContent = memo((props: DrawerProps) => {
     const { Spring, Gesture } = useAnimationLibs();
     const [{ y }, api] = Spring.useSpring(() => ({ y: height }));
     const { theme } = useTheme();
-    const {
-        className, children, onClose, isOpen
-    } = props;
+    const { className, children, onClose, isOpen } = props;
 
     const openDrawer = useCallback(() => {
         api.start({ y: 0, immediate: false });

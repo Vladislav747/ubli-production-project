@@ -23,13 +23,13 @@ export function buildBabelLoader({ isDev, isTsx }: BuildBabelLoaderProps) {
                         }
                     ],
                     '@babel/plugin-transform-runtime',
-                    isTsx
-                        && isProd && [
-                        babelRemovePropsPlugin,
-                        {
-                            props: ['data-testid']
-                        }
-                    ]
+                    isTsx &&
+                        isProd && [
+                            babelRemovePropsPlugin,
+                            {
+                                props: ['data-testid']
+                            }
+                        ]
                     /**
                      * брал is Dev из Options -
                      * { isDev }: BuildOption

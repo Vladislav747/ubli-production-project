@@ -1,17 +1,17 @@
 {
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
-    " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
-      "": ""
-    }
-  },
-  "throw error": "throw error",
-  "Войти": "Enter",
-  "Главная": "Main",
-  "Главная страница": "Main Page",
-  "О сайте": "About Site",
-  "Обновить страницу": "Update Page",
-  "Переключить": "Switch",
-  "Произошла непредвиденная ошибка": "Error happened",
-  "Страница не найдена": "Page Not Found",
-  "Язык": "Language"
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+        " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
+            "": ""
+        }
+    },
+    "throw error": "throw error",
+    "Войти": "Enter",
+    "Главная": "Main",
+    "Главная страница": "Main Page",
+    "О сайте": "About Site",
+    "Обновить страницу": "Update Page",
+    "Переключить": "Switch",
+    "Произошла непредвиденная ошибка": "Error happened",
+    "Страница не найдена": "Page Not Found",
+    "Язык": "Language"
 }

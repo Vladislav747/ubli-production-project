@@ -25,7 +25,6 @@ Normal.args = {
             avatar: 'https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg'
         },
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-
     },
     isLoading: false
 };
