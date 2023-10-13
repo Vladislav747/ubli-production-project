@@ -1,7 +1,7 @@
 import webpack from 'webpack';
 import path from 'path';
 import { buildWebpackConfig } from './config/build/buildWebpackConfig';
-import { BuildEnv, BuildPaths } from './config/build/types/config';
+import { BuildEnv, BuildMode, BuildPaths } from './config/build/types/config';
 
 function getApiUrl(mode: BuildMode, apiUrl?: string) {
     if (apiUrl) {
