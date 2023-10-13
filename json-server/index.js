@@ -5,8 +5,8 @@ const https = require('https');
 const http = require('http');
 
 const options = {
-    key: fs.readFileSync('key.pem'),
-    cert: fs.readFileSync('cert.pem'),
+    key: fs.readFileSync(path.resolve(__dirname, 'key.pem')),
+    cert: fs.readFileSync(path.resolve(__dirname,'cert.pem')),
 }
 
 const server = jsonServer.create();
