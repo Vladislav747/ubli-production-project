@@ -16,7 +16,7 @@ module.exports = {
             jsx: true,
         },
         ecmaVersion: 'latest',
-        sourceType: 'module',
+        sourceType: 'module'
     },
     plugins: [
         'react',
@@ -89,7 +89,7 @@ module.exports = {
             {
                 alias: '@',
                 ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
-            },
+            }
         ],
         'ubli-tv-plugin/public-api-imports': [
             'error',
@@ -102,6 +102,8 @@ module.exports = {
                 ],
             },
         ],
+        'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
+        'react/no-unstable-nested-components': 'warn',
     },
     globals: {
         __IS_DEV__: true,
@@ -113,8 +115,8 @@ module.exports = {
             files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
             rules: {
                 'i18next/no-literal-string': 'off',
-                'max-len': 'off',
-            },
-        },
-    ],
+                'max-len': 'off'
+            }
+        }
+    ]
 };

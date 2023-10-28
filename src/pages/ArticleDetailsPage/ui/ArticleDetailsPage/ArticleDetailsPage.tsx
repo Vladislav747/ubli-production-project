@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { useParams } from 'react-router-dom';
 
+import { getFeatureFlag } from 'shared/lib/features';
 import { Page } from '@/widgets/Page';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
@@ -31,7 +32,7 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
     const { className } = props;
 
     const { id } = useParams<{ id: string }>();
-
+    const isArticleRatingEnabled = getFeatureFlag('isArticleRatingEnabled');
     if (!id) {
         return null;
     }
@@ -44,7 +45,7 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
                 <VStack gap="16" max>
                     <ArticleDetailsPageHeader />
                     <ArticleDetails id={id} />
-                    <ArticleRating articleId={id} />
+                    {isArticleRatingEnabled && <ArticleRating articleId={id} />}
                     <ArticleRecommendationsList />
                     <ArticleDetailsComments id={id} />
                 </VStack>
