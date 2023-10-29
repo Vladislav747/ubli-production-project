@@ -1,6 +1,7 @@
 import { memo, useCallback } from 'react';
 
 import { useSearchParams } from 'react-router-dom';
+import { ArticlePageGreeting } from 'features/articlePageGreeting';
 import { Page } from '@/widgets/Page';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
@@ -50,6 +51,7 @@ const ArticlesPage = (props: ArticlesPageProps) => {
             >
                 <ArticlesPageFilters />
                 <ArticleInfiniteList className={cls.list} />
+                <ArticlePageGreeting />
             </Page>
         </DynamicModuleLoader>
     );
